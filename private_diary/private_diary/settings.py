@@ -82,7 +82,7 @@ DATABASES = {
         'USER':os.environ.get('DB_USER'),
         'PASSWORD':os.environ.get('DB_PASSWORD'),
         'HOST':'',
-        'POST':'',
+        'PORT':'',
     }
 }
 
@@ -128,7 +128,7 @@ STATIC_URL = '/static/'
 
 #ロギングの設定
 LOGGING = {
-    'version':1, #固定
+    'version':1, # 1固定
     'disable_existing_loggers':False,
 
     #ロガーの設定
