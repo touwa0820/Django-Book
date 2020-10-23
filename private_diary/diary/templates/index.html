@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang = "ja">
     <head>
+        <style>
+
+            body{
+                background-image: url(images/home.jpeg);
+                background-repeat: no-repeat;
+                background-position: center bottom;
+                background-size: cover;
+                width:100%;
+                heigth:400px;
+            }
+        </style>
         <meta charset = "UTF-8">
         <title>唐津飲食店検索ページ</title>
     </head>
     <body>
-        <h1>唐津市　飲食店検索</h1>
+        <h1 style>唐津市　飲食店検索</h1>
         <form action="cgi-bin/abc.cgi" method="post">
         <p>
         店名：<input type="text" name="namae" size="40" maxlength="20">   
