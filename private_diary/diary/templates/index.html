@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang = "ja">
+<html lang="ja">
     <head>
-        <style>
-
-            body{
-                background-image: url(images/home.jpeg);
-                background-repeat: no-repeat;
-                background-position: center bottom;
-                background-size: cover;
-                width:100%;
-                heigth:400px;
-            }
-        </style>
-        <meta charset = "UTF-8">
-        <title>唐津飲食店検索ページ</title>
+        <meta charset="UTF-8">
+        <title>
+            唐津飲食店検索ページ
+        </title>
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-        <h1 style>唐津市　飲食店検索</h1>
-        <form action="cgi-bin/abc.cgi" method="post">
-        <p>
-        店名：<input type="text" name="namae" size="40" maxlength="20">   
-        <p> <input type="submit" value="検索"></p>
-        </p>
-        <img src="images/image.png">
-
-        </form>
+        <header>
+            <img  id="header" src="images/home.jpeg">
+        </header>
+        <main id="main">
+            <h1 class="title_1">
+                唐津市　飲食店検索
+            </h1>
+            <form action="cgi-bin/abc.cgi" method="post">
+                <p>店名：<input class="search_1" type="text" name="namae" size="40" maxlength="20">   
+                <input  type="submit" value="検索">
+                </p>
+            </form>
+            <img src="images/image.png" width="295px" height="250px">
+        </main>
+          
+           <div id="side">
+            side(w180px h100px)
+           </div>
+          
+           <footer id="footer">
+            footer(w480px h50px)
+           </footer>
+        
+       
     </body>
 </html>

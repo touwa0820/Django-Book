@@ -1,0 +1,41 @@
+
+.title_1{
+    font-size:16px;
+    color: aqua;
+}
+
+
+body{
+    width: 480px;
+    margin: 0 auto;
+    border: 1px solid #000;
+  }
+  
+  #header{
+    width: 480px;
+    height: 250px;
+  }
+  
+  #main{
+    width: 295px;
+    float: left;
+    height: 400px;
+    background: #afa;
+  }
+  
+  #side{
+    width: 180px;
+    float: right;
+    
+    margin-bottom: 5px;
+    height: 400px;
+    background: #aaf;
+  }
+  
+  #footer{
+    clear: both;
+    width: 480px;
+    
+    height: 50px;
+    background: #ffa;
+  }
