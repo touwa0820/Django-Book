@@ -1,7 +1,7 @@
 
 .title_1{
-    font-size:16px;
-    color: aqua;
+    font-size:30px;
+    color: #000000;
 }
 
 
@@ -36,6 +36,6 @@ body{
     clear: both;
     width: 480px;
     
-    height: 50px;
+    height: 120px;
     background: #ffa;
   }
