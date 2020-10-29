@@ -22,20 +22,36 @@ body{
     height: 400px;
     background: #afa;
   }
-  
-  #side{
-    width: 180px;
-    float: right;
-    
-    margin-bottom: 5px;
-    height: 400px;
-    background: #aaf;
-  }
+
+#side .box {
+	margin: 0 auto 30px auto;
+	padding: 0 0 20px 0;
+}
+#side .box h2 {
+	text-align: center;
+	color: #000;
+	font-size: 20px;
+	line-height: 16px;
+	font-weight: normal;
+}
+#side .box .boxBody {
+	padding: 8px;
+	background: #fff;
+}
+#side .box .boxBody ul {
+	margin: 0 0 16px 0;
+	padding: 0;
+}
+#side .box .boxBody ul li {
+	padding: 8px 0 8px 4px;
+  list-style: none;
+  text-align: center;
+  background-color: #ff69b4;
+}
   
   #footer{
     clear: both;
     width: 480px;
-    
     height: 120px;
     background: #ffa;
   }
