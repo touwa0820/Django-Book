@@ -1,57 +1,77 @@
-
-.title_1{
-    font-size:30px;
-    color: #000000;
+body{
+  width: 480px;
+  margin: auto;
+}
+  
+#header{
+  width: 480px;
+  height: 240px;
+}
+#header .image {
+  width: 480px;
+  height: 250px;
+  background-image: url(images/home.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#header .image .title_1{
+  font-size:40px;
+  color: #000000;
+  text-align: center;
+}
+#header p {
+  text-align: center;
+  margin-top: 25%;
 }
 
-
-body{
-    width: 480px;
-    margin: 0 auto;
-    border: 1px solid #000;
-  }
-  
-  #header{
-    width: 480px;
-    height: 250px;
-  }
-  
-  #main{
-    width: 295px;
-    float: left;
-    height: 400px;
-    background: #afa;
-  }
+#main{
+  width: 364px;
+  float: left;
+  height: 400px;
+  background: #afa;
+  text-align: center;
+}
+#main .image_center{
+  margin-top: 25%;
+}
 
 #side .box {
-	margin: 0 auto 30px auto;
-	padding: 0 0 20px 0;
+  text-align: center;
+  float: right;
+  height: 400px;
+  background-color: #ff69b4;
 }
+
 #side .box h2 {
 	text-align: center;
 	color: #000;
 	font-size: 20px;
-	line-height: 16px;
-	font-weight: normal;
 }
+
 #side .box .boxBody {
-	padding: 8px;
+  text-align: center;
 	background: #fff;
 }
+
 #side .box .boxBody ul {
+  text-align: center;
 	margin: 0 0 16px 0;
 	padding: 0;
 }
+
 #side .box .boxBody ul li {
 	padding: 8px 0 8px 4px;
   list-style: none;
   text-align: center;
   background-color: #ff69b4;
 }
-  
-  #footer{
-    clear: both;
-    width: 480px;
-    height: 120px;
-    background: #ffa;
-  }
+ 
+#footer{
+  clear: both;
+  width: 480px;
+  background: #ffa;
+}
+
+#footer .mokuji {
+  text-align:center;
+}

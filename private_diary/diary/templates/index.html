@@ -9,23 +9,28 @@
     </head>
     <body>
         <header>
-            <img  id="header" src="images/home.jpeg">
+            <div id="header">
+                <div class="image">
+                    <h1 class="title_1">
+                        唐津市　飲食店検索
+                    </h1>
+                    <form action="cgi-bin/abc.cgi" method="post">
+                        <p>店名：<input type="text" name="namae" size="40" maxlength="20">   
+                        <input type="submit" value="検索">
+                        </p>
+                    </form>
+                </div>
+            </div>
         </header>
         <main id="main">
-            <h1 class="title_1">
-                唐津市　飲食店検索
-            </h1>
-            <form action="cgi-bin/abc.cgi" method="post">
-                <p>店名：<input class="search_1" type="text" name="namae" size="40" maxlength="20">   
-                <input  type="submit" value="検索">
-                </p>
-            </form>
-            <img src="images/image.png" width="295px" height="250px">
+            <div class="image_center">
+                <img src="images/image.png" width="295px" height="250px">
+            </div>
         </main>
-          
-           <div id="side">
+        <side>
+            <div id="side">
                 <div class="box">
-                    <h2 style="text-align:right">
+                    <h2>
                         カテゴリー
                     </h2>
                     <div class="boxBody">
@@ -51,32 +56,34 @@
                         </ul>
                     </div>
                 </div>
-           </div>
-          
+            </div>
+        </side>
            <footer id="footer">
-               運営しているSNS
-            <li>
-                <a href="https://saga-jpn.hatenablog.com/archive">
-                    ほのぼの日記ブログ
-                </a>
-            </li>
-            <li>
-                <a href="https://saga-jpn.hatenablog.jp/archive">
-                    透和の商品紹介ブログ
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/Saga_jpn">
-                    Twitter
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/sagan.jpn/">
-                    Facebook
-                </a>
-            </li>
-           </footer>
-        
-       
+               <div class="mokuji">
+                    <h3>
+                        運営しているSNS
+                    </h3>
+                </div>
+                <li>
+                    <a href="https://saga-jpn.hatenablog.com/archive">
+                        ほのぼの日記ブログ
+                    </a>
+                </li>
+                <li>
+                    <a href="https://saga-jpn.hatenablog.jp/archive">
+                        透和の商品紹介ブログ
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Saga_jpn">
+                        Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/sagan.jpn/">
+                        Facebook
+                    </a>
+                </li>
+           </footer>  
     </body>
 </html>
