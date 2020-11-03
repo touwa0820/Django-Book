@@ -14,9 +14,10 @@
                     <h1 class="title_1">
                         唐津市　飲食店検索
                     </h1>
-                    <form action="cgi-bin/abc.cgi" method="post">
-                        <p>店名：<input type="text" name="namae" size="40" maxlength="20">   
-                        <input type="submit" value="検索">
+                    <form method="get">
+                        <p>
+                            店名：<input type="text" name="namae" size="40" maxlength="20">   
+                            <input type="submit" value="検索">
                         </p>
                     </form>
                 </div>
@@ -33,28 +34,31 @@
                     <h2>
                         カテゴリー
                     </h2>
-                    <div class="boxBody">
-                        <ul>
-                            <li>
-                                モーニング
-                            </li>
-                            <li>
-                                ランチ
-                            </li>
-                            <li>
-                                ディナー
-                            </li>
-                            <li>
-                                喫茶店・カフェ
-                            </li>
-                            <li>
-                                ファミレス
-                            </li>
-                            <li>
-                                居酒屋
-                            </li>
-                        </ul>
-                    </div>
+                    <form method="get">
+                        <div class="boxBody">
+                            <ul>
+                                <button>
+                                ・モーニング　　
+                                </button>
+                                <button>
+                                ・ランチ　　　　
+                                </button>
+                                <button>
+                                ・ディナー　　　
+                                </button>
+                                <button>
+                                ・喫茶店・カフェ
+                                </button>
+                                <button>
+                                ・ファミレス　　
+                                </button>
+                                <button>
+                                ・居酒屋　　　　
+                                </button>
+                            </ul>
+                        </div>
+                        
+                    </form>
                 </div>
             </div>
         </side>
