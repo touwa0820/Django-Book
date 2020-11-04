@@ -7,3 +7,6 @@ class IndexView(generic.TemplateView):
 
     def get(self,request,*args,**kwatgs):
         return render(request,"index.html")
+
+class ListView(generic,TemplateView):
+    template_name = "index2.html"
