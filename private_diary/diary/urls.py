@@ -6,6 +6,6 @@ from.import views
 app_name = 'diary'
 urlpatterns = [
     path('',views.IndexView.as_view(),name = "index"),
-    path('',views.ListView.as_view(),name = "list")
+    path('',views.TableView.as_view(),name = "Table")
 ]
 
