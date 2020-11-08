@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ja">
     <head>
@@ -5,7 +6,7 @@
         <title>
             唐津飲食店検索ページ
         </title>
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}">
     </head>
     <body>
         <header>
@@ -14,7 +15,7 @@
                     <h1 class="title_1">
                         唐津市　飲食店検索
                     </h1>
-                    <form method="get">
+                    <form action="{% url 'diary:table' %}" method="get">
                         <p>
                             店名：<input type="text" name="namae" size="40" maxlength="20">   
                             <input type="submit" value="検索">
@@ -24,7 +25,6 @@
             </div>
         </header>
         <main id="main">
-            
         </main>
         <side>
             <div id="side">
@@ -32,31 +32,40 @@
                     <h2>
                         カテゴリー
                     </h2>
-                    <form method="get">
                         <div class="boxBody">
-                            <ul>
+                            <form>
                                 <button>
                                 ・モーニング　　
                                 </button>
+                            </form>
+                            <form>
                                 <button>
                                 ・ランチ　　　　
                                 </button>
+                            </form>
+                            <form>
                                 <button>
                                 ・ディナー　　　
                                 </button>
+                            </form>
+                            <form>
                                 <button>
                                 ・喫茶店・カフェ
                                 </button>
+                            </form>
+                            <form>
                                 <button>
                                 ・ファミレス　　
                                 </button>
+                            </form>
+                            <form>
                                 <button>
-                                ・居酒屋　　　　
+                                    ・居酒屋　　　　
                                 </button>
-                            </ul>
+                            </form>
                         </div>
                         
-                    </form>
+               
                 </div>
             </div>
         </side>

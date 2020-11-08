@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ja">
     <head>
@@ -5,7 +6,7 @@
         <title>
             唐津飲食店検索ページ
         </title>
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}">
     </head>
     <body>
         <header>
@@ -14,7 +15,7 @@
                     <h1 class="title_1">
                         唐津市　飲食店検索
                     </h1>
-                    <form action="index2.html" method="get">
+                    <form action="{% url 'diary:table' %}" method="get">
                         <p>
                             店名：<input type="text" name="namae" size="40" maxlength="20">   
                             <input type="submit" value="検索">
@@ -34,31 +35,40 @@
                     <h2>
                         カテゴリー
                     </h2>
-                    <form action="index2.html" method="get">
                         <div class="boxBody">
-                            <ul>
+                            <form action="{% url 'diary:table' %}" method="get" name="モーニング">
                                 <button>
                                 ・モーニング　　
                                 </button>
+                            </form>
+                            <form action="{% url 'diary:table' %}" method="get" name="ランチ">
                                 <button>
                                 ・ランチ　　　　
                                 </button>
+                            </form>
+                            <form action="{% url 'diary:table' %}" method="get" name="ディナー">
                                 <button>
                                 ・ディナー　　　
                                 </button>
+                            </form>
+                            <form action="{% url 'diary:table' %}" method="get" name="喫茶店・カフェ">
                                 <button>
                                 ・喫茶店・カフェ
                                 </button>
+                            </form>
+                            <form action="{% url 'diary:table' %}" method="get" name="ファミレス">
                                 <button>
                                 ・ファミレス　　
                                 </button>
+                            </form>
+                            <form action="{% url 'diary:table' %}" method="get" name="居酒屋">
                                 <button>
-                                ・居酒屋　　　　
+                                    ・居酒屋　　　　
                                 </button>
-                            </ul>
+                            </form>
                         </div>
                         
-                    </form>
+               
                 </div>
             </div>
         </side>
