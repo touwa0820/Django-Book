@@ -14,12 +14,14 @@ body{
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 #header .image .title_1{
   font-size:40px;
   color: #000000;
   text-align: center;
   padding-top: 60px;
 }
+
 #header p {
   text-align: center;
   margin-top: 10%;
@@ -32,6 +34,7 @@ body{
   background: #afa;
   text-align: center;
 }
+
 #main .image_center{
   margin-top: 25%;
 }
