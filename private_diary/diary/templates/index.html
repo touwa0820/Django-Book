@@ -38,32 +38,32 @@
                         <div class="boxBody">
                             <form action="{% url 'diary:table' %}" method="get" name="和食">
                                 <button>
-                                ・和食　　　　　
+                                ・和食{{cate}}　　　　　
                                 </button>
                             </form>
                             <form action="{% url 'diary:table' %}" method="get" name="洋食">
                                 <button>
-                                ・洋食　　　　　
+                                ・洋食{{cate}}　　　　　
                                 </button>
                             </form>
                             <form action="{% url 'diary:table' %}" method="get" name="中華">
                                 <button>
-                                ・中華　　　　　
+                                ・中華{{cate}}　　　　　
                                 </button>
                             </form>
                             <form action="{% url 'diary:table' %}" method="get" name="喫茶店・カフェ">
                                 <button>
-                                ・喫茶店・カフェ
+                                ・喫茶店・カフェ{{cate}}
                                 </button>
                             </form>
                             <form action="{% url 'diary:table' %}" method="get" name="ファミレス">
                                 <button>
-                                ・ファミレス　　
+                                ・ファミレス{{cate}}　　
                                 </button>
                             </form>
                             <form action="{% url 'diary:table' %}" method="get" name="居酒屋">
                                 <button>
-                                    ・居酒屋　　　　
+                                    ・居酒屋{{cate}}　　　　
                                 </button>
                             </form>
                         </div>
