@@ -31,6 +31,8 @@ def write_date_to_csv(parms):
         writer.writerow(foodlist)
     return print(foodlist)
 
+write_date_to_csv(PARAMS)
+
 
 
 # Create your views here.
