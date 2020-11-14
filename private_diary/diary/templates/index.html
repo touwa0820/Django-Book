@@ -36,32 +36,32 @@
                         カテゴリー
                     </h2>
                         <div class="boxBody">
-                            <form action="{% url 'diary:table' %}" method="get" name="和食">
+                            <form action="{% url 'diary:table' %}?category=和食" method="get" name="和食">
                                 <button>
                                 ・和食{{cate}}　　　　　
                                 </button>
                             </form>
-                            <form action="{% url 'diary:table' %}" method="get" name="洋食">
+                            <form action="{% url 'diary:table' %}?category=洋食" method="get" name="洋食">
                                 <button>
                                 ・洋食{{cate}}　　　　　
                                 </button>
                             </form>
-                            <form action="{% url 'diary:table' %}" method="get" name="中華">
+                            <form action="{% url 'diary:table' %}?category=中華" method="get" name="中華">
                                 <button>
                                 ・中華{{cate}}　　　　　
                                 </button>
                             </form>
-                            <form action="{% url 'diary:table' %}" method="get" name="喫茶店・カフェ">
+                            <form action="{% url 'diary:table' %}?category=喫茶店・カフェ" method="get" name="喫茶店・カフェ">
                                 <button>
                                 ・喫茶店・カフェ{{cate}}
                                 </button>
                             </form>
-                            <form action="{% url 'diary:table' %}" method="get" name="ファミレス">
+                            <form action="{% url 'diary:table' %}?category=ファミレス" method="get" name="ファミレス">
                                 <button>
                                 ・ファミレス{{cate}}　　
                                 </button>
                             </form>
-                            <form action="{% url 'diary:table' %}" method="get" name="居酒屋">
+                            <form action="{% url 'diary:table' %}?category=居酒屋" method="get" name="居酒屋">
                                 <button>
                                     ・居酒屋{{cate}}　　　　
                                 </button>

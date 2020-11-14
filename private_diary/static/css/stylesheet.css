@@ -10,7 +10,7 @@ body{
 #header .image {
   width: 480px;
   height: 250px;
-  background-image: url(static/images/home.jpeg);
+  background-image: url("/static/images/home.jpeg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -76,6 +76,7 @@ body{
   clear: both;
   width: 480px;
   background: #ffa;
+  
 }
 
 #footer .mokuji {
