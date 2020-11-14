@@ -4,7 +4,7 @@ import json
 import csv
 import requests
 
-#初期設定
+    #初期設定
 KEYID = "da4e1585e099dac608d681acf6b4e042"
 HIT_PER_PAGE = 100
 PREF = "PREF41"
@@ -17,7 +17,7 @@ name_kana = ""
 PARAMS = {"keyid":KEYID,"hit_per_page":HIT_PER_PAGE,"pref":PREF,"areacode_l":areacode_l,"areacode_m":areacode_m,"areacode_s":areacode_s,"name":name,"name_kana":name_kana}
 
 def write_data_to_csv(params):
-    foodlists = []
+    foodlists = [["名称"]]
     json_res = requests.get("https://api.gnavi.co.jp/RestSearchAPI/v3/",params=PARAMS).text
     response = json.loads(json_res)
     if "error" in response:

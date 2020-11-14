@@ -36,7 +36,8 @@ body{
 }
 
 #main .image_center{
-  margin-top: 25%;
+  margin-top: 0%;
+  padding-bottom:0%
 }
 
 #side .box {
