@@ -4,7 +4,7 @@ import json
 import csv
 import requests
 
-    #初期設定
+        #初期設定
 KEYID = "da4e1585e099dac608d681acf6b4e042"
 HIT_PER_PAGE = 100
 PREF = "PREF41"
@@ -45,3 +45,6 @@ class TableView(generic.TemplateView):
     def get(self,request,*args,**kwatgs):
         print(request)
         return render(request,"index2.html")
+
+
+
