@@ -33,32 +33,32 @@
                         カテゴリー
                     </h2>
                         <div class="boxBody">
-                            <form>
+                            <form action="{% url 'diary:table' %}?category=和食" method="get" name="和食">
                                 <button>
-                                ・モーニング　　
+                                ・和食　　　　　
                                 </button>
                             </form>
-                            <form>
+                            <form action="{% url 'diary:table' %}?category=洋食" method="get" name="洋食">
                                 <button>
-                                ・ランチ　　　　
+                                ・洋食　　　　　
                                 </button>
                             </form>
-                            <form>
+                            <form action="{% url 'diary:table' %}?category=中華" method="get" name="中華">
                                 <button>
-                                ・ディナー　　　
+                                ・中華　　　　　
                                 </button>
                             </form>
-                            <form>
+                            <form action="{% url 'diary:table' %}?category=喫茶店・カフェ" method="get" name="喫茶店・カフェ">
                                 <button>
                                 ・喫茶店・カフェ
                                 </button>
                             </form>
-                            <form>
+                            <form action="{% url 'diary:table' %}?category=ファミレス" method="get" name="ファミレス">
                                 <button>
                                 ・ファミレス　　
                                 </button>
                             </form>
-                            <form>
+                            <form action="{% url 'diary:table' %}?category=居酒屋" method="get" name="居酒屋">
                                 <button>
                                     ・居酒屋　　　　
                                 </button>
