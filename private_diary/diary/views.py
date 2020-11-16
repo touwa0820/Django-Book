@@ -36,13 +36,12 @@ class TableView(generic.TemplateView):
         }
         json_res = requests.get("https://api.gnavi.co.jp/RestSearchAPI/v3/",params=PARAMS).text
         response = json.loads(json_res)
-
+        print(response)
         if "error" in response:
             return print("エラーが発生しました！")
-        
-        def category(self,request):
-            if "category" in request.Get:
-                param_value = request.Get("category")
-            print(param_value)
-        # print(response)
+        # def get(self,request):  
+        if "category" in request.GET:
+            param_value = request.GET.get("category")
+            
+            
         return render(request,"index2.html")
