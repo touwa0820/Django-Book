@@ -128,13 +128,12 @@ class TableView(generic.TemplateView):
                     print(response['rest'][count]['name'])
                     print(response['rest'][count]['address'])
                     print(response['rest'][count]['tel'])
-                    print(response['rest'][count]['image_url'])
+                    print(response['rest'][count]['url'])
             response={
-                'dict':{
-                    'name:':response['rest'][count]['name'],
-                    'address:':response['rest'][count]['address'],
-                    'tel:':response['rest'][count]['tel'],
-                    'image:':response['rest'][count]['image_url'],
-                }
+                'lists':[
+                    response['rest'][count]['name'],
+                    response['rest'][count]['address'],
+                    response['rest'][count]['tel'],
+                ]
             }
         return render(request,"index2.html",response)
