@@ -35,16 +35,11 @@ body{
   text-align: center;
 }
 
-#main .image_center{
-  margin-top: 0%;
-  padding-bottom:0%
-}
-
 #side .box {
   text-align: center;
   float: right;
   height: 400px;
-  background-color: #ff69b4;
+  background-color: #ffa500;
 }
 
 #side .box h2 {
@@ -76,7 +71,6 @@ body{
   clear: both;
   width: 480px;
   background: #ffa;
-  
 }
 
 #footer .mokuji {
