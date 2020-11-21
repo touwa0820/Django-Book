@@ -26,9 +26,9 @@
         </header>
         <main id="main">
             <table>
-                {% for list in lists %}
+                {% for value in item %}
                    <p>
-                        {{list}}
+                        {{value.response['rest'][len(response['rest'])]['name']}}
                     </p>
                 {% endfor %}
             </table>

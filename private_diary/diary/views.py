@@ -123,17 +123,4 @@ class TableView(generic.TemplateView):
 
                 json_res = requests.get("https://api.gnavi.co.jp/RestSearchAPI/v3/",params=PARAMS).text
                 response = json.loads(json_res)
-                count = len(response['rest'])
-                for count in range(count):
-                    print(response['rest'][count]['name'])
-                    print(response['rest'][count]['address'])
-                    print(response['rest'][count]['tel'])
-                    print(response['rest'][count]['url'])
-            response={
-                'lists':[
-                    response['rest'][count]['name'],
-                    response['rest'][count]['address'],
-                    response['rest'][count]['tel'],
-                ]
-            }
         return render(request,"index2.html",response)
