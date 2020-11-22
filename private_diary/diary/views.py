@@ -41,13 +41,6 @@ class TableView(generic.TemplateView):
                 }
                 json_res = requests.get("https://api.gnavi.co.jp/RestSearchAPI/v3/",params=PARAMS).text
                 response = json.loads(json_res)
-                count = len(response['rest'])
-                for count in range(count):
-                    print(response['rest'][count]['name'])
-                    print(response['rest'][count]['address'])
-                    print(response['rest'][count]['tel'])
-                    print(response['rest'][count]['image_url'])
-                
             elif param_value == "洋食":
                 category_l = "RSFST13000"
                 PARAMS = {
@@ -58,12 +51,6 @@ class TableView(generic.TemplateView):
                 }
                 json_res = requests.get("https://api.gnavi.co.jp/RestSearchAPI/v3/",params=PARAMS).text
                 response = json.loads(json_res)
-                count = len(response['rest'])
-                for count in range(count):
-                    print(response['rest'][count]['name'])
-                    print(response['rest'][count]['address'])
-                    print(response['rest'][count]['tel'])
-                    print(response['rest'][count]['image_url'])
             elif param_value == "中華":
                 category_l = "RSFST14000"
                 PARAMS = {
@@ -74,12 +61,6 @@ class TableView(generic.TemplateView):
                 }
                 json_res = requests.get("https://api.gnavi.co.jp/RestSearchAPI/v3/",params=PARAMS).text
                 response = json.loads(json_res)
-                count = len(response['rest'])
-                for count in range(count):
-                    print(response['rest'][count]['name'])
-                    print(response['rest'][count]['address'])
-                    print(response['rest'][count]['tel'])
-                    print(response['rest'][count]['image_url'])
             elif param_value == "喫茶店・カフェ":
                 category_l = "RSFST18000"
                 PARAMS = {
@@ -90,12 +71,6 @@ class TableView(generic.TemplateView):
                 }
                 json_res = requests.get("https://api.gnavi.co.jp/RestSearchAPI/v3/",params=PARAMS).text
                 response = json.loads(json_res)
-                count = len(response['rest'])
-                for count in range(count):
-                    print(response['rest'][count]['name'])
-                    print(response['rest'][count]['address'])
-                    print(response['rest'][count]['tel'])
-                    print(response['rest'][count]['image_url'])
             elif param_value == "ファミレス":
                 category_l = "RSFST20000"
                 PARAMS = {
@@ -106,12 +81,7 @@ class TableView(generic.TemplateView):
                 }
                 json_res = requests.get("https://api.gnavi.co.jp/RestSearchAPI/v3/",params=PARAMS).text
                 response = json.loads(json_res)
-                count = len(response['rest'])
-                for count in range(count):
-                    print(response['rest'][count]['name'])
-                    print(response['rest'][count]['address'])
-                    print(response['rest'][count]['tel'])
-                    print(response['rest'][count]['image_url'])
+                
             elif param_value == "居酒屋":
                 category_l = "RSFST09000"
                 PARAMS = {
@@ -120,7 +90,25 @@ class TableView(generic.TemplateView):
                     "areacode_l": areacode_l,
                     "category_l": category_l,
                 }
-
                 json_res = requests.get("https://api.gnavi.co.jp/RestSearchAPI/v3/",params=PARAMS).text
                 response = json.loads(json_res)
-        return render(request,"index2.html",response)
+        if "namae" in request.GET:
+            
+            PARAMS = {
+                    "keyid": KEYID,
+                    "pref": PREF,
+                    "areacode_l": areacode_l,
+                    
+                }
+            json_res = requests.get("https://api.gnavi.co.jp/RestSearchAPI/v3/",params=PARAMS).text
+            response = json.loads(json_res)
+        store_list = [] 
+        for i in response['rest'] :
+            store_list.append({
+                "name":i["name"],
+                "address":i["address"],
+                "tel":i["tel"],
+                "url":i["url"],
+            })
+        print(type(response))
+        return render(request,"index2.html",{"store_list":store_list})

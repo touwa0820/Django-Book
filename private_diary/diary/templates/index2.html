@@ -25,13 +25,20 @@
             </div>
         </header>
         <main id="main">
-            <table>
-                {% for value in item %}
-                   <p>
-                        {{value.response['rest'][len(response['rest'])]['name']}}
-                    </p>
-                {% endfor %}
-            </table>
+            {% for value in store_list %}
+                <h3>
+                    {{value.name}}
+                </h3>
+                <h3>
+                    {{value.address}}
+                </h3>
+                <h3>
+                    {{value.tel}}
+                </h3>
+                <h3>
+                    ---------------------------------------------
+                </h3>
+            {% endfor %}
         </main>
         <side>
             <div id="side">
