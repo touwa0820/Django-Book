@@ -33,6 +33,8 @@ body{
   height: 400px;
   background: #afa;
   text-align: left;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 

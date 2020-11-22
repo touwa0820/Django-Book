@@ -27,17 +27,20 @@
         <main id="main">
             {% for value in store_list %}
                 <h3>
-                    {{value.name}}
+                    店舗名　【{{value.name}}】
                 </h3>
-                <h3>
-                    {{value.address}}
-                </h3>
-                <h3>
-                    {{value.tel}}
-                </h3>
-                <h3>
-                    ---------------------------------------------
-                </h3>
+                <h5>
+                    住所　：{{value.address}}
+                </h5>
+                <h5>
+                    電話　：{{value.tel}}
+                </h5>
+                <h65>
+                    リンク　：<a href="{{value.url}}">{{value.name}}ホームページ</a>
+                </h5>
+                <h5>
+                    ---------------------------------------------------------------
+                </h5>
             {% endfor %}
         </main>
         <side>

@@ -93,12 +93,12 @@ class TableView(generic.TemplateView):
                 json_res = requests.get("https://api.gnavi.co.jp/RestSearchAPI/v3/",params=PARAMS).text
                 response = json.loads(json_res)
         if "namae" in request.GET:
-            
+            freeword = name
             PARAMS = {
                     "keyid": KEYID,
                     "pref": PREF,
                     "areacode_l": areacode_l,
-                    
+                    "freeword": freeword
                 }
             json_res = requests.get("https://api.gnavi.co.jp/RestSearchAPI/v3/",params=PARAMS).text
             response = json.loads(json_res)
